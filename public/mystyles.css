@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  height: 50px;
+  flex-basis: 20%;
+  padding: 20px;
+  width: 40px;
+  border: thin solid red;
+  margin: 10px;
+}
+
+.header {
+  padding: 40px;
+  background-color: crimson;
+}
+
+.header .title {
+  margin-left: 10px;
+  font-size: larger;
+  color: white;
+}
+
+.but {
+  display: block;
+  background-color: rgb(105, 227, 123);
+  border: none;
+  border-radius: 10px;
+  width: 60px;
+}
+
+.but a {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1458px) {
+  .grid-item {
+    padding: 20px 60px;
+  }
+}
+
+@media only screen and (max-width: 1252px) {
+  .grid-item {
+    padding: 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 1076px) {
+  .grid-item {
+    padding: 20px 40px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .grid-item {
+    flex-basis: 30%;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
+}

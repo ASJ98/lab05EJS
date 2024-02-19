@@ -1,0 +1,18 @@
+<!-- Here we include a pre-written template for the header!! -->
+<!-- since the views folder is the default for express, we don't need
+ to specify it in including the header.ejs template -->
+<%- include('header') %>
+<!-- The - above is used when want to output raw html-->
+<!-- = is used when we want to run server-side JS (dynamic data) -->
+<main>
+  <div class="grid-row">
+    <% mydata.forEach((toy)=> { %>
+    <div class="grid-item">
+      <%= toy.title.slice(0, 30) %>
+      <button class="but"><a href="#" target="_blank"> BUY </a></button>
+    </div>
+    <% }) %>
+  </div>
+</main>
+
+<%- include('footer') %>
